@@ -1,0 +1,379 @@
+body{
+    background-color: #333333;
+}
+
+.line{
+    
+    outline:2px #fffcf7 solid;
+
+}
+.title{
+    position: relative;
+    color:#fffcf7;
+    top:4em;
+    left:10vh;
+    font-size:6em;
+}
+
+.subtitle1{
+    position: relative;
+    top:4.5em;
+    left:12vh;
+    color:#fffcf7;
+    font-size: 5em;
+    opacity: 0.5;
+}
+
+.subtitle2{
+    position: relative;
+    top:4.3em;
+    left:25vh;
+    color:#fffcf7;
+    font-size: 5em;
+    opacity: 0.5;
+}
+
+.main{
+    transform:0.5s;
+    padding:0;
+    margin:0;
+}
+.mainpic{
+   
+    height: 45em;
+    background-color:#fffcf7;
+    background-image: url("../image/mountain.jpg");
+    background-position:center top;
+    background-size:cover;  
+   
+}
+
+
+.footer{
+    margin-top:2em;
+    position: relative;
+    color:#fffcf7;
+    border-top:solid #eb6100 1px;
+}
+.copyright {
+    text-align: center;
+ 
+}
+
+.button1{
+    
+    cursor: pointer;
+    transition: .3s;
+    position: relative;
+    border: none;
+    height:3em;
+    width:13em;
+    top:25em;
+    left:15vh;
+    text-align: center;
+    color:#eb6100;
+    line-height: 3em;
+    background-color: #fff;
+  }
+  .button1:after{
+      
+    position: absolute;
+    content: '';
+    background-color: #eb6100;
+    width:0%;
+    left:0%;
+    overflow: hidden;
+    height:100%;
+    transition: 0.3s;
+    bottom: 0em;
+  }
+  
+  
+  
+  .button1:hover:after {
+    content: 'Go';
+    width: 100%;
+    color:#fffcf7;
+  }
+
+  /* 當按下button1 */
+.button1_main{
+    transform: all 10s;
+    margin-top:1em; 
+    height: auto;
+    
+}
+  .button1_title{
+    display: flex;
+    color:#fffcf7;
+    justify-content: center;
+    font-size: 2em
+   
+  }
+  .button1_title_deco{
+    padding:0 0.5em;
+   border-left:solid #eb6100 0.5em;
+   
+  }
+  .button1_news1,.button1_row2,.button1_news5{
+    display: flex;
+    margin:1em auto;
+    padding:0;
+
+
+  }
+  .button1_news1_pic1,.button1_news1_pic2,.button1_news1_pic3{
+    height:15em;
+    width:30em;
+   
+  }
+  .button1_news1_pic1{
+
+    background-position: center top; 
+    background-size:cover;
+    background-image:url("../image/refugee1.jpg");
+    
+  }
+  .button1_news1_pic2{
+    background-position: center top; 
+    background-size:cover;
+    background-image:url("../image/refugee2.jpg");
+  
+  }
+  .button1_news1_pic3{
+    background-position: center top; 
+    background-size:cover;
+    background-image:url("../image/refugee3.jpg");
+    
+    
+  }
+  .button1_news1_text{
+    color:#fffcf7;
+    padding:2em;
+  }
+  .button1_news1_text h5{
+
+    font-size:2em;
+  }
+  
+  .button1_news2,.button1_news3,.button1_news4{
+    color:#fffcf7;
+  }
+ .button1_news2_pic,.button1_news3_pic,.button1_news4_pic{
+    background-color: antiquewhite;
+    height: 10em;
+
+ }
+ .button1_news2_pic{
+
+    background-position: center top; 
+    background-size:cover;
+    background-image:url("../image/trade\ war.jpg");
+  
+ }
+
+ .button1_news3_pic{
+
+    background-position: center top; 
+    background-size:cover;
+    background-image:url("../image/nsKorea.jpg");
+  
+ }
+ .button1_news4_pic{
+
+    background-position: center top; 
+    background-size:cover;
+    background-image:url("../image/train.jpg");
+  
+ }
+
+
+
+ .button1_news5_pic1,.button1_news5_pic2,.button1_news5_pic3{
+    height:15em;
+    width:30em;
+   
+  }
+  .button1_news5_pic1{
+
+    background-position: center top; 
+    background-size:cover;
+    background-image:url("../image/Trump1.jpg");
+    
+  }
+  .button1_news5_pic2{
+    background-position: center top; 
+    background-size:cover;
+    background-image:url("../image/Trump2.jpg");
+  
+  }
+  .button1_news5_pic3{
+    background-position: center top; 
+    background-size:cover;
+    background-image:url("../image/Trump3.jpg");
+    
+    
+  }
+
+  #readmore1,#readmore2,#readmore3,#readmore4,#readmore5{
+    cursor: pointer;
+    text-align: end;
+  }
+
+ /* 詳細文章 */
+.showBig{
+  width: 100%;
+  background-color: rgba(0,0,0,0.5);
+  padding:5px;
+}
+.showbig_main{
+  
+  margin:5em; 
+  color: #fffcf7;
+  
+}
+.showbig_main h5{
+
+  font-size: 2em
+
+}
+.showbig_main_content{
+  margin:2em;
+
+}
+.error{
+  cursor: pointer;
+  position: absolute;
+  right:20px;
+  top: 20px;
+  width: 50px;
+  height: 50px;
+
+}
+
+.showbig_pic{
+  margin:0 auto;
+  background-image:url("../image/refugee1.jpg");
+  background-position: center top; 
+  background-size:cover;
+  height:25em;
+}
+@media(max-width:12800px){
+  #small{
+    display:none;
+
+  }
+  #big{
+    display:block;
+    left:15%;
+  }
+  #smallcontent{
+    display:none;
+    }
+
+}
+@media(max-width:768px){
+  .button1{
+    width:10em;
+  }
+  #big{
+    display:none;
+
+  }
+  #small{
+    display:block;
+    top:0;
+    left:0;
+    margin: 0 auto;
+    top:27em;
+  }
+  .title{
+   
+    top:4em;
+    left:0vh;
+   
+}
+
+.subtitle1{
+   
+    top:4.5em;
+    left:5vh;
+  
+    
+  
+}
+
+.subtitle2{
+   
+    top:4.3em;
+    left:5vh;
+    
+   
+   
+}
+.button1_news1{
+  display: block;
+}
+.button1_news1_pic1,.button1_news1_pic2,.button1_news1_pic3{
+  
+  width:32em;
+ 
+}
+.button1_news5{
+  display: block;
+}
+.button1_news5_pic1,.button1_news5_pic2,.button1_news5_pic3{
+  
+  width:32em;
+ 
+}
+#bigcontent{
+  display:none;
+  }
+#smallcontent{
+display:block;
+}
+
+.showbig_main,.showbig_main_content,.showbig_main_content_context{
+  margin:0em;
+}
+.showbig_main{
+  margin-top:5em;
+}
+
+}
+
+@media(max-width:576px){
+  .title{
+   
+    top:3em;
+    left:0vh;
+   
+}
+#small{
+  display:block;
+  top:0;
+  left:0;
+  top:18em;
+}
+.subtitle1{
+  display: none;
+}
+.subtitle2{
+  display: none;
+}
+
+.button1_row2{
+  display: block;
+}
+ h5{
+font-size: 2em
+}
+.showbig_main,.showbig_main_content,.showbig_main_content_context{
+  margin:0em;
+}
+.showbig_main{
+  margin-top:5em;
+}
+}
+
